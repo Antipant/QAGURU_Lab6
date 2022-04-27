@@ -1,10 +1,11 @@
-package ru.antipant;
+package ru.antipant.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import ru.antipant.pages.BaseTest;
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
@@ -16,7 +17,7 @@ import static org.openqa.selenium.By.partialLinkText;
 @Severity(SeverityLevel.CRITICAL)
 @Feature("Задачи в репозитории")
 @Story("Просмотр созданных задач в репозитории")
-public class SelenideTest {
+public class SelenideTest extends BaseTest {
 
     @Test
     @DisplayName("Хороший тест")

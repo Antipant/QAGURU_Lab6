@@ -1,4 +1,4 @@
-package ru.antipant;
+package ru.antipant.tests;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
@@ -6,6 +6,7 @@ import io.qameta.allure.Attachment;
 import io.qameta.allure.Step;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import ru.antipant.pages.BaseTest;
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
@@ -13,7 +14,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class WebSteps {
+public class WebSteps extends BaseTest {
     @Step("Открываем главную страницу")
     public void openMainPage() {
         open("https://github.com");

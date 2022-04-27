@@ -1,10 +1,11 @@
-package ru.antipant;
+package ru.antipant.tests;
 
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Allure;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
+import ru.antipant.pages.BaseTest;
 
 import java.nio.charset.StandardCharsets;
 
@@ -15,7 +16,7 @@ import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 import static org.openqa.selenium.By.partialLinkText;
 
-public class StepTest {
+public class StepTest extends BaseTest {
 
     private static final String REPOSITORY = "Antipant/FirstLabJavaQAguru";
     private static final int ISSUE_NUMBER = 2;
